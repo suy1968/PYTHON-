@@ -1,0 +1,12 @@
+f1 = open("file1.txt", "r")
+f2 = open("file2.txt", "r")
+f3 = open("file3.txt", "r")
+l1 = f1.read().split('\n')
+l2 = f2.read().split('\n')
+l3 = f3.read().split('\n')
+res = l1 + l2 +l3
+res.sort()
+print(res)
+f1.close()
+f2.close()
+f3.close()
